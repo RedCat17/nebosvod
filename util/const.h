@@ -1,0 +1,21 @@
+#pragma once
+
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 600
+#define TARGET_FPS 30.0f
+
+#define WORLD_HALF_SIZE 50000.0f
+// #define WORLD_HALF_SIZE 5000.0f
+
+#define BH_MAX_NODES 262140
+#define MAX_STACK 4096
+
+#define GRID_CELL_CAPACITY 128
+#define GRID_PAIRS_CELL_CAPACITY 128
+
+#define THREADS 8
+
+#define STEPS_PER_FRAME 10
+
+// #define PAIR_CACHE_SIZE 16536
+#define PAIR_CACHE_SIZE 131072
