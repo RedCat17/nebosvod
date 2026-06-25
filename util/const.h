@@ -2,7 +2,7 @@
 
 #define WINDOW_WIDTH 1280
 #define WINDOW_HEIGHT 720
-#define TARGET_FPS 30.0f
+#define TARGET_FPS 60.0f
 
 #define WORLD_HALF_SIZE 50000.0f
 // #define WORLD_HALF_SIZE 5000.0f

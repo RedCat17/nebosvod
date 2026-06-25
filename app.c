@@ -242,7 +242,7 @@ void start_app(AppContext *app_ctx) {
                     // visualise_bh_tree(&ctx.world);
                     // visualise_grid(&ctx);
 
-                    render_world(&app_ctx->ctx.world, V_LINE_LENGTH);
+                    render_world(&app_ctx->ctx.world, &app_ctx->camera, sim_viewport, V_LINE_LENGTH);
                     EndMode2D();
                 }
 
