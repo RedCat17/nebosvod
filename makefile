@@ -7,7 +7,7 @@ RELEASE_FLAGS = -O3
 LDFLAGS = -lraylib -lm 
 DEBUG_LDFLAGS = -fsanitize=address
 
-TARGET = main
+TARGET = build/main
 
 SRC := $(wildcard \
 	*.c \
