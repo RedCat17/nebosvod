@@ -16,9 +16,6 @@
 #include "render/render_debug.h"
 #include "render/render.h"
 
-
-#define V_LINE_LENGTH 1 // длина линий скорости
-
 #define SPAWN_AREA_SIZE 10000 // размеры области спавна
 #define SPAWN_MAX_SPEED 10 // максимальная скорость при спавне
 #define SPAWN_MIN_MASS 2 // диапазон масс при спавне

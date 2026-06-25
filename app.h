@@ -1,7 +1,6 @@
 #pragma once
 
 #include <raylib.h>
-#include "physics/gravity/bh.h"
 #include "physics/physics_config.h"
 #include "physics/physics_context.h"
 
