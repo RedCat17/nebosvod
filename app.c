@@ -93,7 +93,8 @@ void start_app(AppContext *app_ctx) {
     float value = 0;
 
     int fontsize = 26;
-    Font font = LoadFontEx("CourierPrime-Regular.ttf", fontsize, NULL, 0);
+    // Font font = LoadFontEx("assets/CourierPrime-Regular.ttf", fontsize, NULL, 0);
+    Font font = LoadFontEx("assets/LiberationMono-Regular.ttf", fontsize, NULL, 0);
 
     // ========== bottom menu ==========
     UIRect bottom_menu_rect = {0, screen_height - bottom_menu_height, screen_width, bottom_menu_height};
