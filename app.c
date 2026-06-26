@@ -78,6 +78,8 @@ void start_app(AppContext *app_ctx) {
     int dragging = false;
     int running = false;
     int render = true;
+    int render_lines = true;
+
     Vector2 lastMousePosition = {0};
     float accumulator = 0;
 
@@ -192,6 +194,7 @@ void start_app(AppContext *app_ctx) {
 
             if (IsKeyReleased(KEY_SPACE)) running = !running;
             if (IsKeyReleased(KEY_R)) render = !render;
+            if (IsKeyReleased(KEY_V)) render_lines = !render_lines;
 
             if (IsKeyDown(KEY_RIGHT)) app_ctx->camera.target.x += 600.0f / app_ctx->camera.zoom * frametime;
             if (IsKeyDown(KEY_LEFT)) app_ctx->camera.target.x -= 600.0f / app_ctx->camera.zoom * frametime;
@@ -243,7 +246,7 @@ void start_app(AppContext *app_ctx) {
                     // visualise_bh_tree(&ctx.world);
                     // visualise_grid(&ctx);
 
-                    render_world(&app_ctx->ctx.world, &app_ctx->camera, sim_viewport, V_LINE_LENGTH);
+                    render_world(&app_ctx->ctx.world, &app_ctx->camera, sim_viewport, render_lines, V_LINE_LENGTH);
                     EndMode2D();
                 }
 
