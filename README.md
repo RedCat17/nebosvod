@@ -46,8 +46,6 @@ Nebosvod is astrophysical N-body simulation with accretion. Particless attract e
 
 The goal of the project was to simulate planetary system formation from dust cloud. Overall, the goal was achieved. Though, produced model of accretion only shows qualitative similarity and isn't yet physically accurate.
 
-![Screenshot](assets/nebosvod.png)
-
 ## Implementation
 
 Nebosvod is written in C using raylib for graphics. UI is implemented using [Beton IMGUI](https://github.com/RedCat17/beton).
