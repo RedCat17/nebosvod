@@ -38,14 +38,14 @@ make
 
 Внизу находится меню управления с паузой (ползунок ничего не делает).
 
-`Колёсико мыши` - приближение камеры;
-`Нажатие колёсиком` - движение камеры;
-`Стрелки` - движение камеры;
-`Пробел` - пауза;
-`R` - включить/выключить отрисовку;
-`V` - включить/выключить векторы скорости;
-`F` - следовать за случайной частицей;
-`C` - перейти в центр масс;
+- `Колёсико мыши` - приближение камеры;
+- `Нажатие колёсиком` - движение камеры;
+- `Стрелки` - движение камеры;
+- `Пробел` - пауза;
+- `R` - включить/выключить отрисовку;
+- `V` - включить/выключить векторы скорости;
+- `F` - следовать за случайной частицей;
+- `C` - перейти в центр масс;
 
 
 # Nebosvod
@@ -84,11 +84,11 @@ To the right, there is info panel.
 
 On the bottom, there is control menu with pause button.
 
-`Scroll` - zoom;
-`Middle mouse button` - move camera;
-`Arrow keys` - move camera;
-`Space` - pause;
-`R` - toggle render;
-`V` - toggle velocity vectors;
-`F` - follow random particle;
-`C` - move to CoM;
+- `Scroll` - zoom;
+- `Middle mouse button` - move camera;
+- `Arrow keys` - move camera;
+- `Space` - pause;
+- `R` - toggle render;
+- `V` - toggle velocity vectors;
+- `F` - follow random particle;
+- `C` - move to CoM;
