@@ -213,13 +213,18 @@ void start_app(AppContext *app_ctx) {
                 if (GetMouseWheelMove() == 1) app_ctx->camera.zoom *= 1.2f;
                 if (GetMouseWheelMove() == -1) app_ctx->camera.zoom /= 1.2f;
 
-                app_ctx->camera.zoom = fmaxf(app_ctx->camera.zoom, 0.01f / RENDER_SCALE);
                 // Start drag
                 if (IsMouseButtonPressed(MOUSE_BUTTON_MIDDLE)) {
                     dragging = true;
                     lastMousePosition = app_ctx->ui.mouse_input.pos;
                 }
             }
+
+            if (IsKeyDown(KEY_EQUAL)) app_ctx->camera.zoom *= 1.2f;
+            if (IsKeyDown(KEY_MINUS)) app_ctx->camera.zoom /= 1.2f;
+            if (IsKeyDown(KEY_KP_ADD)) app_ctx->camera.zoom *= 1.2f;
+            if (IsKeyDown(KEY_KP_SUBTRACT)) app_ctx->camera.zoom /= 1.2f;
+            app_ctx->camera.zoom = fminf(100.0f / RENDER_SCALE, fmaxf(app_ctx->camera.zoom, 0.01f / RENDER_SCALE));
 
             // End drag
             if (IsMouseButtonReleased(MOUSE_BUTTON_MIDDLE)) {

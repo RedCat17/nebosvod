@@ -39,6 +39,7 @@ make
 Внизу находится меню управления с паузой (ползунок ничего не делает).
 
 - `Колёсико мыши` - приближение камеры;
+- `-` / `+` - приближение камеры;
 - `Нажатие колёсиком` - движение камеры;
 - `Стрелки` - движение камеры;
 - `Пробел` - пауза;
@@ -85,6 +86,7 @@ To the right, there is info panel.
 On the bottom, there is control menu with pause button.
 
 - `Scroll` - zoom;
+- `-` / `+` - zoom;
 - `Middle mouse button` - move camera;
 - `Arrow keys` - move camera;
 - `Space` - pause;
